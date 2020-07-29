@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>폼꾸미기</title>
+<style type="text/css">
+  input[type=text]{
+    color:red;
+  }
+  input[type=email]{
+    color:blue;
+  }
+  textarea{
+    color:green;
+  }
+  input:hover, textarea:hover{
+     background: aliceblue;
+  }
+  input[type=text]:focus{
+    color:#151515;
+    font-size:120%
+  }
+  input[type=email]:focus{
+    color:#5F04B4;
+    font-size:150%
+  }
+  label span{
+    display:block;
+    padding:5px;
+  }
+</style>
+</head>
+<body>
+  <form action="#" method="post">
+    <label>
+       <span> Name: </span> <input type="text" placeholder="Elvis" > 
+    </label>
+    <label>
+       <span> Email: </span> <input type="email" placeholder="elvis@gmail.com" > 
+    </label>
+    <label>
+       <span> Comment: </span> <textarea rows="3" cols="20" placeholder="메세지를 남겨주세요."> </textarea>
+    </label>
+    <label>
+       <span>  </span> <input type="submit" value="전송" >
+    </label>
+     <label>
+       <span>  </span> <input type="reset" value="취소" >
+    </label> 
+      
+  
+  </form>
+</body>
+</html>

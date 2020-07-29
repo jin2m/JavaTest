@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><title>document.write() 활용</title>
+</head>
+<body>
+<h3>document.write() 활용</h3>
+<hr>
+<script>
+	document.write("<h3>Welcome!</h3>");
+	document.write("2 + 5 는 <br>");
+	document.write("<mark>7 입니다.</mark> <br> ");
+	document.writeln("<strong> 진하게 하는 태그 <strong> <br>");
+	document.write("X<sup>2</sup> <br> ");
+	/*var rept = prompt("이름을 입력하세요", "정현희");
+	if(rept == null) {
+		document.write("취소를 눌렀습니다.");
+	}else if(rept==""){
+		document.write("입력하지않고 확인을 눌렀습니다.");
+	}else {
+		document.write(rept);
+	}*/
+	var rept=confirm("전송할까요?");
+	if(rept==true){
+		document.write("확인 버튼을 눌렀습니다.");
+	}else{
+		document.write("취소 버튼을 눌렀습니다.");
+	}
+	
+</script>
+</body>
+</html>

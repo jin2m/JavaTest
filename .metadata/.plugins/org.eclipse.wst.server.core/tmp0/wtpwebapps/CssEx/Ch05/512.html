@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>애니메이션 </title>
+ <style type="text/css">
+    @keyframes bomb{
+       0% {font-size:500%;color:red;}
+       20% {font-size:100%;color:orange;}
+       40% {font-size:50%;color:yellow;}
+       60%{font-size:0%;}
+       80% {font-size:50%;color:blue;}
+       100%{font-size:100%;color:purple;}
+    }
+ h3 {
+   animation-name:bomb;
+   animation-duration:7s;
+   animation-iteration-count:infinite;
+ }
+ span{
+   transition:font-size  5s;
+   transition:color  5s;
+ }
+ span:hover{
+   font-size:500%; color:red;
+ }
+ </style>
+</head>
+<body>
+ <h3> 꽝! </h3>
+ <hr>
+ <p> <span> 꽝!  </span> 글자가 3초동안 500%시작하여 100%로 바뀌는 애니메이션입니다. </p>
+</body>
+</html>
+
+
+

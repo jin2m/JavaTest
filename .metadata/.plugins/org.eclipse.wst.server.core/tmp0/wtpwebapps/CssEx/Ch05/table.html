@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>표만들기</title>
+<style type="text/css">
+  table{
+     border-collapse:collapse;
+  }
+  thead{
+     background: darkgray;
+     color:yellow;
+  }
+  td, th { /* 모든 셀에 적용 */
+	text-align : left;
+	padding : 10px;
+	height : 20px;
+	width : 100px;
+  }
+  tfoot{
+    background: #E3F6CE;
+    color:#8000FF
+  }
+  td, tfoot th{
+     border-bottom: 1px solid gray;
+  }
+  tbody tr:nth-child(3) {
+	background: aliceblue;
+}
+  tbody td:hover {
+     background: pink;
+  
+  }
+</style>
+</head>
+<body>
+  <table>
+     <thead>
+      <tr> <th> 이름 </th> <th> HTML </th> <th> CSS</th> </tr>
+    </thead>
+    <tbody>
+      <tr> <td>황기태</td> <td> 80</td> <td> 70 </td></tr>
+      <tr> <td>이재문</td> <td> 95</td> <td> 99 </td></tr> 
+      <tr> <td>이병은</td> <td> 80</td> <td> 70 </td></tr>
+      <tr> <td>김남윤</td> <td> 95</td> <td> 99 </td></tr> 
+    </tbody> 
+    <tfoot>
+       <tr> <th> 합계 </th> <th> 175 </th> <th> 169 </th> </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
